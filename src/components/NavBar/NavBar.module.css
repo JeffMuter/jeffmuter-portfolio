@@ -1,0 +1,20 @@
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    background-color: cornflowerblue;
+    list-style-type: none;
+    margin: unset;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.name {
+    float: left;
+    color:purple;
+    padding: 4px;
+}
+.link {
+    float: right;
+    padding: 14px 16px;
+}
