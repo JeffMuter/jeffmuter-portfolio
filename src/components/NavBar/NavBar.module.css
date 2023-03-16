@@ -1,4 +1,4 @@
-.topnav {
+.topNav {
     overflow: hidden;
     text-align: center;
     background-color: cornflowerblue;
@@ -9,12 +9,10 @@
     width: 100%;
     z-index: 100;
 }
-.name {
-    float: left;
-    color:purple;
-    padding: 4px;
-}
-.link {
+
+.items {
+    color: white;
     float: right;
-    padding: 14px 16px;
+    padding: .5rem;
+    font-size: large;
 }

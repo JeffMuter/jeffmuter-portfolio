@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "myportfolio-356516"
-  }
+    "default": "myportfolio-356516",
+    "JeffM-Portfolio": "myportfolio-356516"
+  },
+  "targets": {},
+  "etags": {}
 }

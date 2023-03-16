@@ -1,27 +1,20 @@
-//import classes from "./NavBar.module.css";
+import classes from "./NavBar.module.css";
+import React from "react";
 
 const NavBar = (props) => {
-  //  const onClickHandler = (event) => {};
-  return;
-  // <ul className={classes.topnav}>
-  //   <li className={classes.name}>
-  //     <h3>Jeff Muter</h3>
-  //   </li>
-  //   <li className={classes.link}>
-  //     <a
-  //       alt="Github logo, clicking here links you to my github."
-  //       href="https://github.com/JeffMuter"
-  //       target="_blank"
-  //       rel="noreferrer"
-  //     >
-  //       <img
-  //         // className={classes.logo}
-  //         src={githubLogo}
-  //         alt="Github logo, clicking here links you to my github."
-  //       />
-  //     </a>
-  //   </li>
-  // </ul>
+  const onClickHandler = (event) => {};
+  return (
+    <div className={classes.topNav}>
+      <ul>
+        <li className={classes.items}>
+          <h3>Projects</h3>
+        </li>
+        <li className={classes.items}>
+          <h3>Contact</h3>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default NavBar;
