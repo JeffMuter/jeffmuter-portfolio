@@ -1,7 +1,6 @@
 // src/components/Contact.js
 
 import React from "react";
-import { forwardRef } from "react";
 
 const Contact = (props, ref) => {
   const [name, setName] = React.useState("");
@@ -122,10 +121,4 @@ const Contact = (props, ref) => {
     </section>
   );
 };
-export default forwardRef(Contact);
-
-// feb 28: mike bollinger
-
-//march 1:6142918108: Mattie Alexander no message
-
-//march 13: mattie alexander - Screen Issue
+export default Contact;
