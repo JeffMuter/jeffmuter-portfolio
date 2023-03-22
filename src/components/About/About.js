@@ -1,12 +1,7 @@
 //import Card from "../UI/Card";
 //import classes from "./About.module.css";
-import { useRef } from "react";
 
 const About = (props) => {
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <section id="about" className="h-screen">
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
