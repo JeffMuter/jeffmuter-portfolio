@@ -1,7 +1,7 @@
 .topNav {
     overflow: hidden;
     text-align: center;
-    background-color: cornflowerblue;
+    background-color: transparent;
     list-style-type: none;
     margin: unset;
     position: fixed;
