@@ -11,7 +11,7 @@ const Projects = () => {
           Apps I Have Built
         </h1>
       </div>
-      <div className="flex flex-wrap -m-4">
+      <div className="flex flex-wrap">
         {projects.map((project) => (
           <a
             href={project.link}
