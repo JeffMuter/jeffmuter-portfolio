@@ -4,8 +4,10 @@
 .navspace {
     padding: 1rem;
     margin: 2rem;
-    margin-top: 6rem;
-
+    margin-top: 3rem;
     border-radius: 14px;
-    background-color: white;
+}
+
+.words {
+    color: green;
 }

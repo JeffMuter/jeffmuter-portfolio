@@ -51,7 +51,7 @@ const Contact = (props, ref) => {
               </p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-teal tracking-widest text-xs">
+              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
               <a className="text-indigo-400 leading-relaxed">

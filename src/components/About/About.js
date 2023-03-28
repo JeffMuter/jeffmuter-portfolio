@@ -10,11 +10,11 @@ const About = (props) => {
     >
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
         <div className="lg:pr-24 mr- flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center w-1/3">
-          <p className="title-font text-5xl mb-4 font-medium text-red-400 !important">
-            Hello There,
+          <p className="title-font text-7xl mb-4 font-medium text-lightRed">
+            Hello,
           </p>
-          <p className="title-font text-5xl mb-4 font-medium text-white">
-            My name is Jeff Muter, a self-taught front end web developer.
+          <p className="title-font text-5xl leading-tight mb-4 font-medium text-lightRed">
+            My name is Jeff Muter, a front-end web developer.
           </p>
         </div>
       </div>
