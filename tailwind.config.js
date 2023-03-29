@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./src/components/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        customFont: ["Varela Round", "sans - serif"],
+      },
+    },
     colors: {
       purple: "#191919",
       pink: "#f32066",
