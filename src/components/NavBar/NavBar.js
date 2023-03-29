@@ -4,13 +4,13 @@ import React from "react";
 const NavBar = (props) => {
   const onClickHandler = (event) => {};
   return (
-    <div className={classes.topNav}>
+    <div className="bg-transparent float-right">
       <ul>
-        <li className={classes.items}>
+        <li className="text-lightRed">
           <h3>Projects</h3>
         </li>
-        <li className={classes.items}>
-          <h3>Contact</h3>
+        <li className="text-lightRed">
+          <h3>Contact Me</h3>
         </li>
       </ul>
     </div>
