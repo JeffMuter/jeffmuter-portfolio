@@ -3,6 +3,7 @@ import { UserGroupIcon, ChatIcon } from "@heroicons/react/solid";
 import { testimonials } from "../data";
 
 const Testimonials = () => {
+  // set up a few cards in staggered position where people comment on working with me.
   return;
   <section id="testimonials">
     <div className="container px-5 py-10 mx-auto text-center">

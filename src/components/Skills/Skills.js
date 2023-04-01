@@ -3,6 +3,7 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import { skills } from "../data";
 
 const Skills = () => {
+  //show a list of major&minor tech skills in two columns, using icons to make it visually appealing
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">

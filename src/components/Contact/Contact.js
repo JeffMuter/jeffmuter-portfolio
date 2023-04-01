@@ -3,6 +3,8 @@
 import React from "react";
 
 const Contact = (props, ref) => {
+  //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.
+
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
