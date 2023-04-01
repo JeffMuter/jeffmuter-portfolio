@@ -2,6 +2,7 @@
 //import classes from "./About.module.css";
 
 const About = (props) => {
+  //intro section that says who I am, what I do, and has a nice background image
   return (
     <section
       id="about"

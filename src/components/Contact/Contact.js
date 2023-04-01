@@ -3,7 +3,7 @@
 import React from "react";
 
 const Contact = (props, ref) => {
-  //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.
+  //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.On the bottom left is the Google Maps API zoomed into my area.
 
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
@@ -29,6 +29,7 @@ const Contact = (props, ref) => {
   }
   return (
     <section id="contact" className="relative">
+      {/* contianer for the GoogleMaps API */}
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -36,12 +37,10 @@ const Contact = (props, ref) => {
             height="100%"
             title="map"
             className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=211+Millpond+Road,+Sunbury,+OH,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
+          {/* container for my personal contact info (address, phone number, email). Includes headers and details */}
           <div className="relative flex flex-wrap py-6 rounded shadow-md bg-purple text-teal">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
@@ -66,6 +65,7 @@ const Contact = (props, ref) => {
             </div>
           </div>
         </div>
+        {/* contains the form that will take details and send a personal email to me */}
         <form
           netlify="true"
           name="contact"
@@ -75,7 +75,7 @@ const Contact = (props, ref) => {
           <input type="hidden" name="contact" value="contact" />
 
           <h2 className="text-teal sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Schedule An Interview
+            Let's Work Together
           </h2>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-teal">
