@@ -4,7 +4,7 @@ import { projects } from "../data";
 
 const Projects = () => {
   return (
-    <section id="projects" className="text-white body-font">
+    <section id="projects" className="text-white body-font mt-10">
       <div className="flex flex-col w-full wb-20">
         <CodeIcon className="mx-auto inline-block w-10 wb-4 fill-teal" />
         <h1 className="sm:text-4xl text-3xl mx-auto font-medium title-font text-teal mb-8">
