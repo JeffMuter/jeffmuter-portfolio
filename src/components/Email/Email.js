@@ -1,6 +1,8 @@
 import React from "react";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Email = (props) => {
   const form = useRef();
@@ -23,6 +25,7 @@ const Email = (props) => {
         (result) => console.log(result.text),
         (error) => console.log(error.text)
       );
+    toast.success("Email sent!", { position: toast.POSITION.BOTTOM_CENTER });
     e.target.reset();
   };
 
@@ -32,7 +35,7 @@ const Email = (props) => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        className=" flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
       >
         <label className="text-teal sm:text-4xl text-3xl mb-1 font-medium title-font">
           Let's Work Together
@@ -57,12 +60,14 @@ const Email = (props) => {
           required
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
         ></textarea>
-        <input
+        <button
           type="submit"
-          value="SEND"
           className="text-teal bg-pink border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-        ></input>
+        >
+          Send
+        </button>
       </form>
+      <ToastContainer />
     </div>
   );
 };
