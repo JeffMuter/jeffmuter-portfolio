@@ -1,9 +1,18 @@
-TODO:
+This is my personal webdev portfolio. Built using ReactJS, html, css, & TailwindCSS.
 
-Connect Netlify to my Email
+My first dig into building a completely custom website where I said 'how do I want this to work?' and just figuring it out. 
 
-Make styling decisions
+GoogleMapsAPI, EmailJS, mapping through data to build components, and many other useful libraries to make this little guy come to life.
 
-get testimonials posted.
 
-add a navbar
+
+
+
+
+TO_DO:
+
+hamburder menu for mobile.
+
+Add hidden class to About bg image for mobile.
+
+add a GoogleMaps component to cimplify the Contact component.
