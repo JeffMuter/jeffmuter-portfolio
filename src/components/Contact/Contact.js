@@ -4,7 +4,6 @@ import React from "react";
 
 const Contact = (props) => {
   //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.On the bottom left is the Google Maps API zoomed into my area.
-
   function encode(data) {
     return Object.keys(data)
       .map(
@@ -14,11 +13,11 @@ const Contact = (props) => {
   }
 
   return (
-    <section id="contact" className="relative h-screen">
+    <section id="contact" className="relative min-h-screen">
       {/* contianer for the GoogleMaps API & Email component */}
-      <div className="container mx-auto flex justify-between sm:flex-nowrap flex-wrap h-screen">
+      <div className="container mx-auto flex justify-between sm:flex-nowrap flex-wrap min-h-screen">
         {/* container for GoogleMaps API */}
-        <div className="md:w-1/2 h-4/5 py-10 m-10 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="md:w-1/2 py-10 m-10 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
@@ -42,9 +41,7 @@ const Contact = (props) => {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
-                muterjeffery@gmail.com
-              </a>
+              <a className="leading-relaxed">muterjeffery@gmail.com</a>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>

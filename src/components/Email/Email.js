@@ -35,7 +35,7 @@ const Email = (props) => {
   };
 
   return (
-    <div className="flex mr-20 mt-10 justify-between">
+    <div className=" m-10">
       {/* a form for the user to write an email, add their name and email */}
       <form
         ref={form}
