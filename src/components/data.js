@@ -11,7 +11,7 @@ export const projects = [
     title: "Google Calendar Collab",
     subtitle: "React, JavaScript, HTML, CSS",
     description:
-      "By adding events to your calendar, you can add and remove events from a list. This app was made with Cameron Robinson",
+      "By adding events to your calendar, you can add and remove events from a list. This app was made with Cameron Robinson.",
     image: "./GoogleCalPic.png",
     link: "https://github.com/cameroncrobinson/react-calendar",
   },
