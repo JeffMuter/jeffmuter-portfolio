@@ -7,7 +7,7 @@ import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <main className="text-gray-400 bg-purple body-font">
+    <main className="flex flex-col bg-purple body-font">
       <NavBar />
       <About />
       <Projects />

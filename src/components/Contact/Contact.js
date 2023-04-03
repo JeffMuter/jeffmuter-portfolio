@@ -14,10 +14,11 @@ const Contact = (props) => {
   }
 
   return (
-    <section id="contact" className="relative">
-      {/* contianer for the GoogleMaps API */}
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className=" md:w-1/2 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+    <section id="contact" className="relative h-screen">
+      {/* contianer for the GoogleMaps API & Email component */}
+      <div className="container mx-auto flex justify-between sm:flex-nowrap flex-wrap h-screen">
+        {/* container for GoogleMaps API */}
+        <div className="md:w-1/2 h-4/5 py-10 m-10 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"

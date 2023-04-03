@@ -25,19 +25,24 @@ const Email = (props) => {
         (result) => console.log(result.text),
         (error) => console.log(error.text)
       );
-    toast.success("Email sent!", { position: toast.POSITION.BOTTOM_CENTER });
+    toast.success("Email sent!", {
+      position: toast.POSITION.BOTTOM_CENTER,
+      autoClose: 1500,
+      hideProgressBar: true,
+      icon: false,
+    });
     e.target.reset();
   };
 
   return (
-    <div>
+    <div className="flex mr-20 mt-10 justify-between">
       {/* a form for the user to write an email, add their name and email */}
       <form
         ref={form}
         onSubmit={sendEmail}
-        className=" flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+        className=" flex flex-col md:ml-auto w-full md:mt-0"
       >
-        <label className="text-teal sm:text-4xl text-3xl mb-1 font-medium title-font">
+        <label className="text-teal sm:text-4xl text-3xl mb-4 font-medium title-font">
           Let's Work Together
         </label>
         <label className="leading-7 text-sm text-teal">Name</label>
@@ -62,9 +67,9 @@ const Email = (props) => {
         ></textarea>
         <button
           type="submit"
-          className="text-teal bg-pink border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          className="text-teal bg-pink border-0 py-2 px-6 mt-8 focus:outline-none hover:bg-indigo-600 rounded-3xl text-lg inline-block min-w-max"
         >
-          Send
+          Send Email
         </button>
       </form>
       <ToastContainer />
