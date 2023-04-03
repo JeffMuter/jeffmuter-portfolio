@@ -3,6 +3,7 @@ import React from "react";
 import { projects } from "../data";
 
 const Projects = () => {
+  //displays 4 projects that link to their corresponding github when clicked. On hover, a description of the project appears.
   return (
     <section id="projects" className="text-white body-font mt-10">
       <div className="flex flex-col w-full wb-20">
@@ -11,7 +12,9 @@ const Projects = () => {
           Apps I Have Built
         </h1>
       </div>
+      {/* Container for all the project items */}
       <div className="flex flex-wrap h-260">
+        {/* Mapping through all the projects */}
         {projects.map((project) => (
           <a
             href={project.link}
@@ -19,6 +22,7 @@ const Projects = () => {
             className="sm:w-1/2 w-100 p-4"
           >
             <div className="flex relative">
+              {/* Project image */}
               <img
                 alt="gallery"
                 className="absolute inset-0 w-full h-full object-cover object-center"

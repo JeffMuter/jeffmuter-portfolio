@@ -7,11 +7,11 @@ import "react-toastify/dist/ReactToastify.css";
 const Email = (props) => {
   const form = useRef();
 
-  //creating a function to send the email through the EmailJS to my email.
+  // function to send email using EmailJS
   const sendEmail = (e) => {
     e.preventDefault();
 
-    //all the required info in order for the info to get to EmailJS & indentify my account.
+    // send the form data to EmailJS to identify account and send email
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -19,48 +19,54 @@ const Email = (props) => {
         form.current,
         process.env.REACT_APP_USER_ID
       )
-      //.then used because sendForm is asynchronous.
-      //if clear, logs the text, if error, error message
+      // using .then because sendForm is asynchronous. If successful, logs the text. If error, logs error message
       .then(
         (result) => console.log(result.text),
         (error) => console.log(error.text)
       );
+    // display toast notification when email is successfully sent
     toast.success("Email sent!", {
       position: toast.POSITION.BOTTOM_CENTER,
       autoClose: 1500,
       hideProgressBar: true,
       icon: false,
     });
+    // clear the form after email is sent
     e.target.reset();
   };
 
   return (
     <div className="grid grid-cols-1 gap-4 m-20 w-1/2">
-      {/* a form for the user to write an email, add their name and email */}
+      {/* form for user to send email */}
       <form ref={form} onSubmit={sendEmail} className="block md:mt-0">
+        {/* label for the form */}
         <label className="block text-teal sm:text-4xl text-3xl mb-4 font-medium title-font">
           Let's Work Together
         </label>
+        {/* input field for user's name */}
         <label className="block leading-7 text-sm text-teal">Name</label>
         <input
           type="text"
           name="user_name"
           required
           className="w-full rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-        ></input>
+        />
+        {/* input field for user's email */}
         <label className="leading-7 text-sm text-teal">Email</label>
         <input
           type="email"
           name="user_email"
           required
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none  py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-        ></input>
+        />
+        {/* input field for message */}
         <label className="leading-7 text-sm text-teal">Message</label>
         <textarea
           name="message"
           required
           className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-        ></textarea>
+        />
+        {/* button to submit the form */}
         <button
           type="submit"
           className="text-teal bg-pink border-0 py-2 px-6 mt-8 rounded-3xl text-lg inline-block"
@@ -68,6 +74,7 @@ const Email = (props) => {
           Send Email
         </button>
       </form>
+      {/* toast notification for displaying success/error messages */}
       <ToastContainer />
     </div>
   );
