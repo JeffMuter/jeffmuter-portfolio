@@ -17,14 +17,14 @@ const Contact = (props) => {
       {/* contianer for the GoogleMaps API & Email component */}
       <div className="container mx-auto flex justify-between sm:flex-nowrap flex-wrap min-h-screen">
         {/* container for GoogleMaps API */}
-        <div className="md:w-1/2 py-10 m-10 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div className="md:w-1/2 w-full py-10 m-10 bg-pink rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"
             height="100%"
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=211+Millpond+Road,+Sunbury,+OH,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=211+Millpond+Road,+Sunbury,+OH,+USA&zoom=8&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           {/* container for my personal contact info (address, phone number, email). Includes headers and details */}
           <div className="relative flex flex-wrap py-6 rounded shadow-md bg-purple text-teal">

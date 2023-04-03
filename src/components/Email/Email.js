@@ -35,17 +35,13 @@ const Email = (props) => {
   };
 
   return (
-    <div className=" m-10">
+    <div className="grid grid-cols-1 gap-4 m-20 w-1/2">
       {/* a form for the user to write an email, add their name and email */}
-      <form
-        ref={form}
-        onSubmit={sendEmail}
-        className=" flex flex-col md:ml-auto w-full md:mt-0"
-      >
-        <label className="text-teal sm:text-4xl text-3xl mb-4 font-medium title-font">
+      <form ref={form} onSubmit={sendEmail} className="block md:mt-0">
+        <label className="block text-teal sm:text-4xl text-3xl mb-4 font-medium title-font">
           Let's Work Together
         </label>
-        <label className="leading-7 text-sm text-teal">Name</label>
+        <label className="block leading-7 text-sm text-teal">Name</label>
         <input
           type="text"
           name="user_name"
@@ -67,7 +63,7 @@ const Email = (props) => {
         ></textarea>
         <button
           type="submit"
-          className="text-teal bg-pink border-0 py-2 px-6 mt-8 focus:outline-none hover:bg-indigo-600 rounded-3xl text-lg inline-block min-w-max"
+          className="text-teal bg-pink border-0 py-2 px-6 mt-8 rounded-3xl text-lg inline-block"
         >
           Send Email
         </button>
