@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Bars3 } from "@heroicons/react/solid";
 
-// A simple navigation bar component
+// A simple navigation bar component.
 const NavBar = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Detect if screen size is mobile
+  // Detect if screen size is mobile.
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
+  // Detect when Burger Icon is clicked.
   const handleMenuClick = () => {
     setMenuOpen(!menuOpen);
   };
@@ -57,6 +57,7 @@ const NavBar = (props) => {
   // Render a list with two links, one for the Projects section and one for the Contact section that are scrolled to when clicked.
   return (
     <div className="overflow-hidden absolute top-0 right-0 bg-transparent list-none m-0 w-full z-100 text-3xl">
+      <Bars3 className="w-10 inline-block mb-4 fill-teal" />
       <ul>
         <Link
           to="projects"
