@@ -10,8 +10,8 @@ function App() {
     <main className="flex flex-col bg-purple body-font">
       <NavBar />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
       <Contact />
     </main>
   );

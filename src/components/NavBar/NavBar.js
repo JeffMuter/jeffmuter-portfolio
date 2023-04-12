@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-scroll";
 import { useMediaQuery } from "react-responsive";
-import { Bars3 } from "@heroicons/react/solid";
 
 // A simple navigation bar component.
 const NavBar = (props) => {
@@ -57,8 +56,15 @@ const NavBar = (props) => {
   // Render a list with two links, one for the Projects section and one for the Contact section that are scrolled to when clicked.
   return (
     <div className="overflow-hidden absolute top-0 right-0 bg-transparent list-none m-0 w-full z-100 text-3xl">
-      <Bars3 className="w-10 inline-block mb-4 fill-teal" />
-      <ul>
+      <nav>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          className="text-teal float-right mr-8 font-medium cursor-pointer"
+        >
+          Contact
+        </Link>
         <Link
           to="projects"
           smooth={true}
@@ -68,14 +74,14 @@ const NavBar = (props) => {
           Projects
         </Link>
         <Link
-          to="contact"
+          to="skills"
           smooth={true}
           duration={500}
           className="text-teal float-right mr-8 font-medium cursor-pointer"
         >
-          Contact
+          Skills
         </Link>
-      </ul>
+      </nav>
     </div>
   );
 };
