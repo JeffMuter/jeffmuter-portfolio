@@ -5,14 +5,13 @@ import { useMediaQuery } from "react-responsive";
 
 // A simple navigation bar component.
 const NavBar = (props) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   // Detect if screen size is mobile.
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   // Detect when Burger Icon is clicked.
   const handleMenuClick = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen(!isOpen);
   };
 
   const closeMenu = () => {
