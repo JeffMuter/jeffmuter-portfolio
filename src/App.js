@@ -7,13 +7,15 @@ import Skills from "./components/Skills/Skills";
 
 function App() {
   return (
-    <main className="flex flex-col bg-purple body-font">
-      <NavBar />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-    </main>
+    <div>
+      <main className="flex flex-col bg-purple body-font">
+        <NavBar />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
+    </div>
   );
 }
 

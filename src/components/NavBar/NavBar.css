@@ -20,18 +20,7 @@
   }
   
   #burger {
-    display: none; /* hide the icon by default */
-    z-index: 2;
-  }
-  
-  @media (max-width: 480px) {
-    .wide-nav {
-      display: none;
-     }}
-  
-  @media (max-width: 480px) {
-    #burger {
-      display: block; /* show the icon when screen width is 480px or less */
+    display: block; /* show the icon when screen width is 480px or less */
       position: fixed;
       top: 1rem;
       right: 1rem;
@@ -47,9 +36,7 @@
       transition: .5s ease-in-out;
       cursor: pointer;
       z-index: 2;
-    }
   }
-  
   
   #burger span {
       display: block;
@@ -110,7 +97,8 @@
   
   #sidebar {
     transform: translateX(100%);
-    max-width: 10rem;
+    min-width: 10rem;
+    width: 20vw;
     height: 100vh;
     background-color: rgb(51, 51, 51);
     color: #B8B9ED;
@@ -118,11 +106,19 @@
     position: fixed;
     top: 0;
     right: 0;
-    padding: 3rem;
     padding-top: 5rem;
     transition: transform 0.5s ease-out;
     z-index: 1;
   }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
   #sidebar.side-open {
     transform: translateX(0%);  
   }
