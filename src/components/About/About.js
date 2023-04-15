@@ -3,8 +3,11 @@
 import { useState, useEffect } from "react";
 
 const About = (props) => {
+  //intro section that says who I am, what I do, and has a nice background image
+  //state change to check for mobile
   const [isMobile, setIsMobile] = useState(false);
 
+  //effect to check for the screen size.
   useEffect(() => {
     function handleResize() {
       setIsMobile(window.innerWidth <= 768);
@@ -16,11 +19,10 @@ const About = (props) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  //changes the background for mobile because the background image makes it too difficult to read.
   const style = isMobile
     ? { backgroundColor: "#191919" }
     : { backgroundImage: "url(/background-home.jpg)" };
-  //intro section that says who I am, what I do, and has a nice background image
-  //{ backgroundImage: "url(/background-home.jpg)" }
 
   return (
     <section id="about" className="h-screen bg-cover bg-center" style={style}>

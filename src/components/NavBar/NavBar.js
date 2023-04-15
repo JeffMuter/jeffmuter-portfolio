@@ -13,7 +13,7 @@ const NavBar = (props) => {
   // Render a list with two links, one for the Projects section and one for the Contact section that are scrolled to when clicked.
   return (
     //navbar container
-    <div className="w-screen h-screen absolute">
+    <div>
       {/* burger nav container */}
       <div id="burger" className={isOpen ? "open" : ""} onClick={handleClick}>
         <span></span>
@@ -21,6 +21,12 @@ const NavBar = (props) => {
         <span></span>
         <span></span>
       </div>
+      {/* tint overlay so that when the sidebar is open, the rest of the page has a tint */}
+      <div
+        id="overlay"
+        className={isOpen ? "overlay" : "overlay-hidden"}
+        onClick={handleClick}
+      ></div>
       {/* sidebar nav container */}
       <div id="sidebar" className={isOpen ? "side-open" : ""}>
         <aside className="sidebar" onClick={handleClick}>

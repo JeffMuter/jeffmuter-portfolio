@@ -10,7 +10,7 @@
     list-style: none;
     margin: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 3;
     font-size: 3rem;
   }
   
@@ -35,7 +35,7 @@
       -o-transition: .5s ease-in-out;
       transition: .5s ease-in-out;
       cursor: pointer;
-      z-index: 2;
+      z-index: 4;
   }
   
   #burger span {
@@ -108,7 +108,7 @@
     right: 0;
     padding-top: 5rem;
     transition: transform 0.5s ease-out;
-    z-index: 1;
+    z-index: 3;
   }
 
   .sidebar {
@@ -116,7 +116,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
   }
 
   #sidebar.side-open {
@@ -126,4 +126,22 @@
   .side-menu {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  #overlay {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .overlay-hidden {
+    display: none;
   }
