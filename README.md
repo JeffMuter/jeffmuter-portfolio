@@ -11,8 +11,8 @@ GoogleMapsAPI, EmailJS, mapping through data to build components, and many other
 
 TO_DO:
 
-hamburder menu for mobile.
+Making the mobile About section look better.
 
-Add hidden class to About bg image for mobile.
+Add buttons to projects to take you to the hosted website or the github.
 
-add a GoogleMaps component to cimplify the Contact component.
+Projects hover slides down.
