@@ -30,7 +30,7 @@ const Projects = () => {
                 className="absolute inset-0 w-full h-full object-cover object-center"
                 src={project.image}
               />
-              <div className="px-8 py-10 relative z-2 w-full border-4 border-teal bg-pink opacity-0  hover:opacity-100">
+              <div className="px-8 py-10 relative z-2 w-full border-4 border-teal bg-purple opacity-0  hover:opacity-100">
                 <h2 className="tracking-widest text-sm title-font font-medium mb-1">
                   {project.subtitle}
                 </h2>
