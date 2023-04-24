@@ -1,11 +1,19 @@
 //import Card from "../UI/Card";
 //import classes from "./About.module.css";
 import { useState, useEffect } from "react";
+import classNames from "classnames";
 
 const About = (props) => {
   //intro section that says who I am, what I do, and has a nice background image
   //state change to check for mobile
   const [isMobile, setIsMobile] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  //useEffect will change the state on page load for the animation meant to start on page load.
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+  //"title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal"
 
   //effect to check for the screen size.
   useEffect(() => {
@@ -31,7 +39,11 @@ const About = (props) => {
           <p className="title-font text-4xl md:text-5xl lg:text-7xl font-medium text-teal">
             Hello,
           </p>
-          <p className="title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal">
+          <p
+            className={`inline-block transform transition-transform duration-500 ease-in-out ${
+              isLoaded ? "translate-x-0" : "translate-x-1"
+            } delay-500 title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal`}
+          >
             My name is Jeff Muter, Your helpful web-developer.
           </p>
         </div>
