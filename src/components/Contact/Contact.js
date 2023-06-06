@@ -4,13 +4,6 @@ import React from "react";
 
 const Contact = (props) => {
   //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.On the bottom left is the Google Maps API zoomed into my area.
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
 
   return (
     <section id="contact" className="relative min-h-screen">
@@ -41,7 +34,7 @@ const Contact = (props) => {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="leading-relaxed">muterjeffery@gmail.com</a>
+              <p className="leading-relaxed">muterjeffery@gmail.com</p>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
