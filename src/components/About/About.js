@@ -1,7 +1,7 @@
 //import Card from "../UI/Card";
 //import classes from "./About.module.css";
 import { useState, useEffect } from "react";
-import classNames from "classnames";
+// import className from "classnames";
 
 const About = (props) => {
   //intro section that says who I am, what I do, and has a nice background image
