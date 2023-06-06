@@ -32,13 +32,13 @@ const NavBar = (props) => {
         <aside className="sidebar" onClick={handleClick}>
           <nav className="sidebar">
             <Link
-              to="contact"
+              to="skills"
               smooth={true}
               duration={500}
               className="text-teal text-3xl font-medium cursor-pointer mt-2 mb-2"
               onClick={handleClick}
             >
-              Contact
+              Skills
             </Link>
             <Link
               to="projects"
@@ -50,13 +50,13 @@ const NavBar = (props) => {
               Projects
             </Link>
             <Link
-              to="skills"
+              to="contact"
               smooth={true}
               duration={500}
               className="text-teal text-3xl font-medium cursor-pointer mt-2 mb-2"
               onClick={handleClick}
             >
-              Skills
+              Contact
             </Link>
           </nav>
         </aside>

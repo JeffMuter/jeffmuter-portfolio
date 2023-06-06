@@ -35,13 +35,17 @@ export const projects = [
 
 export const skills = [
   "React",
+  "Vue",
   "JavaScript",
+  "Springboot",
+  "Java",
+  "PostgreSQL",
   "HTML5",
   "CSS3",
   "TailwindCSS",
   "NextJS",
-  "GitHub",
-  "VSCode",
+//  "GitHub",
+//  "VSCode",
 ];
 
 export const testimonials = [

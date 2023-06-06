@@ -44,7 +44,7 @@ const About = (props) => {
               isLoaded ? "translate-x-0" : "translate-x-1"
             } delay-500 title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal`}
           >
-            My name is Jeff Muter, Your helpful web-developer.
+            My name is Jeff Muter, a Software Developer
           </p>
         </div>
       </div>
