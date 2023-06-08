@@ -40,8 +40,8 @@ const About = (props) => {
             Hello,
           </p>
           <p
-            className={`inline-block transform transition-transform duration-500 ease-in-out ${
-              isLoaded ? "translate-x-0" : "translate-x-1"
+            className={`inline-block transform transition-transform duration-1 ease-in-out ${
+              isLoaded ? 'translate-x-0' : '-translate-x-full'
             } delay-500 title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal`}
           >
             My name is Jeff Muter, a Software Developer
