@@ -35,7 +35,7 @@ const About = (props) => {
   return (
     <section id="about" className="h-screen bg-cover bg-center" style={style}>
       <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:pr-24 mr- flex flex-col items-start text-left font-gothicCentury mb-16 md:mb-0  w-1/2">
+        <div className="lg:pr-24 mr-auto flex flex-col items-start text-left font-gothicCentury mb-16 md:mb-0  w-1/2">
           <p className="title-font text-4xl md:text-5xl lg:text-7xl font-medium text-teal">
             Hello,
           </p>
@@ -44,7 +44,7 @@ const About = (props) => {
               isLoaded ? 'translate-x-0' : '-translate-x-full'
             } delay-500 title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal`}
           >
-            My name is Jeff Muter, a Software Developer
+            My name is Jeff Muter, <br/> Software Developer, <br/> New Father, <br/> Planeswalker, <br/> Innovation Lover, <br/> Lifelong Learner
           </p>
         </div>
       </div>

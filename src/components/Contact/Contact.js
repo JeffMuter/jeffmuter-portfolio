@@ -17,16 +17,16 @@ const Contact = (props) => {
             title="map"
             className="absolute inset-0"
             style={{ filter: "opacity(0.7)" }}
-            src="https://www.google.com/maps/embed/v1/place?q=211+Millpond+Road,+Sunbury,+OH,+USA&zoom=8&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+            src="https://www.google.com/maps/embed/v1/place?q=Millpond+Road,+Sunbury,+OH,+USA&zoom=8&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
           {/* container for my personal contact info (address, phone number, email). Includes headers and details */}
           <div className="relative flex flex-wrap py-6 rounded shadow-md bg-purple text-teal">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                ADDRESS
+                LOCATION
               </h2>
               <p className="mt-1">
-                211 Millpond Ave. <br />
+                Millpond Ave. <br />
                 Sunbury OH. 43074
               </p>
             </div>
