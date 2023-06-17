@@ -9,9 +9,9 @@ GoogleMapsAPI, EmailJS, mapping through data to build components, and many other
 
 
 
-TO_DO:
+// TODO
 
-Making the mobile About section look better.
+
 
 Add buttons to projects to take you to the hosted website or the github.
 
