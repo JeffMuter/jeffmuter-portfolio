@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+// @type {import('tailwindcss').Config} 
 const plugin = require('tailwindcss/plugin')
 
 
@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
 
-      textShadow: {
+      textShadow: { // apply with text-shadow*add color name*
         sm: '0 1px 2px var(--tw-shadow-color)',
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
-        teal: '0 0 4px #B8B9ED, 0 0 5px #B8B9ED, 0 0 15px #B8B9ED, 0 0 20px #B8B9ED, 0 0 40px #B8B9ED, 0 0 45px #B8B9ED, 0 0 50px #B8B9ED, 0 0 70px #B8B9ED',
+        teal: '0 0 14px rgba(184, 185, 237, 0.2), 0 0 15px rgba(184, 185, 237, 0.2), 0 0 12px rgba(184, 185, 237, 0.2), 0 0 8px rgba(184, 185, 237, 0.2), 0 0 18px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2)',
       },
       fontFamily: {
         customFont: ["Varela Round", "sans - serif"],

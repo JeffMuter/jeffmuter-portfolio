@@ -1,20 +1,24 @@
-import React from "react";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
+import "tailwindcss/tailwind.css";
+
 
 function App() {
+
   return (
     <div>
-      <main className="flex flex-col bg-purple body-font">
-        <NavBar />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
+      <div id="tsparticles">
+        <main className="bg-purple">
+          <NavBar />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+        </main>
+      </div>
     </div>
   );
 }

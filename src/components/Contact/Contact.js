@@ -26,7 +26,7 @@ const Contact = (props) => {
                 LOCATION
               </h2>
               <p className="mt-1">
-                Millpond Ave. <br />
+                Millpond Rd. <br />
                 Sunbury OH. 43074
               </p>
             </div>
