@@ -46,7 +46,7 @@ module.exports = {
         sm: "0 1px 2px var(--tw-shadow-color)",
         DEFAULT: "0 2px 4px var(--tw-shadow-color)",
         lg: "0 8px 16px var(--tw-shadow-color)",
-        teal: "0 0 14px rgba(184, 185, 237, 0.2), 0 0 15px rgba(184, 185, 237, 0.2), 0 0 12px rgba(184, 185, 237, 0.2), 0 0 8px rgba(184, 185, 237, 0.2), 0 0 18px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2), 0 0 17px rgba(184, 185, 237, 0.2)",
+        teal: "0 0 14px rgba(184, 185, 237, 0.3), 0 0 15px rgba(184, 185, 237, 0.9), 0 0 12px rgba(184, 185, 237, 0.9), 0 0 8px rgba(184, 185, 237, 0.3), 0 0 18px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.9), 0 0 17px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.3)",
       },
       animationDelay: {
         "-4s": "-4s",
