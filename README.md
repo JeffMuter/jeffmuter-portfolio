@@ -3,9 +3,13 @@ jeffmuter.com
 
 // TODO
 
+App:
+
+1. Change font
+
 About:
 
-1. Something to go on right side of screen for About - too much empty space.
+1. Something to go on right side of screen for About - too much empty space
 
 Skills:
 

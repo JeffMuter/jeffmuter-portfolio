@@ -23,7 +23,7 @@ const About = (props) => {
             <p
               className={`inline-block transform transition-transform duration-2 ease-in-[cubic-bezier(0.95,0.05,0.795,0.035)] duration-1000 ${
                 isLoaded ? "translate-x-0" : "-translate-x-full"
-              } title-font text-3xl md:lg:text-5xl leading-tight mb-4 mt-7 font-medium text-teal`}
+              } title-font text-3xl md:lg:text-5xl leading-12 mb-4 mt-7 font-medium text-teal`}
             >
               My name is Jeff Muter, <br /> Software Developer, <br /> New
               Father, <br /> Planeswalker, <br /> Innovation Lover, <br />{" "}
