@@ -1,18 +1,18 @@
 This is my personal webdev portfolio. Built using ReactJS, html, css, & TailwindCSS.
-
-My first dig into building a completely custom website where I said 'how do I want this to work?' and just figuring it out. 
-
-GoogleMapsAPI, EmailJS, mapping through data to build components, and many other useful libraries to make this little guy come to life.
-
-
-
-
-
+jeffmuter.com
 
 // TODO
 
+About:
 
+1. Something to go on right side of screen for About - too much empty space.
 
-Add buttons to projects to take you to the hosted website or the github.
+Skills:
 
-Projects hover slides down.
+1. hovering over the whole skill activated the chevron arrow animation
+2. a sliding bar to reveal details about the skill selected
+
+Projects:
+
+1. Create slideshow instead of current.
+2. buttons to take you to github or website of the project
