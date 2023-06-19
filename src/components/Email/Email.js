@@ -69,7 +69,7 @@ const Email = (props) => {
         {/* button to submit the form */}
         <button
           type="submit"
-          className="text-teal bg-pink border-0 py-2 px-6 mt-8 rounded-3xl text-lg inline-block"
+          className="text-teal bg-pink border-0 py-2 px-6 mt-8 rounded-3xl text-lg inline-block transition-shadow duration-300 hover:box-shadow-teal"
         >
           Send Email
         </button>

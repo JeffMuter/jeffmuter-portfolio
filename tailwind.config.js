@@ -58,7 +58,8 @@ module.exports = {
         teal: "0px 0px 14px 8px rgba(184, 185, 237, 0.5)",
       },
       fontFamily: {
-        customFont: ["Varela Round", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        comfortaa: ["Comfortaa", "sans-serif"],
       },
     },
     colors: {

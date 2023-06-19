@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <div>
-        <main className="bg-purple">
+        <main className="bg-purple font-comfortaa">
           <NavBar />
           <Background />
           <About />
