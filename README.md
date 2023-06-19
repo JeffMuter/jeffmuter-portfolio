@@ -1,7 +1,14 @@
+//////////////////////////////////////////////
 This is my personal webdev portfolio. Built using ReactJS, html, css, & TailwindCSS.
 jeffmuter.com
+//////////////////////////////////////////////
+HOW TO DEPLOY UPDATES TO FIREBASE
+commands:
 
-// TODO
+1. npm run build
+2. firebase deploy
+   //////////////////////////////////////////////
+   TODO
 
 App:
 
@@ -20,3 +27,4 @@ Projects:
 
 1. Create slideshow instead of current.
 2. buttons to take you to github or website of the project
+   //////////////////////////////////////////////
