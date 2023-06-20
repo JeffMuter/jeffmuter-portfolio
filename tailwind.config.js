@@ -11,10 +11,10 @@ module.exports = {
       animation: {
         marquee: "marquee 35s linear infinite",
         marquee2: "marquee2 45s linear infinite",
-        marquee3: "marquee2 50s linear infinite",
-        marquee4: "marquee2 55s linear infinite",
-        marquee5: "marquee2 65s linear infinite",
-        marquee6: "marquee2 75s linear infinite",
+        marquee3: "marquee3 50s linear infinite",
+        marquee4: "marquee4 55s linear infinite",
+        marquee5: "marquee5 60s linear infinite",
+        marquee6: "marquee6 75s linear infinite",
       },
       keyframes: {
         marquee: {
@@ -52,7 +52,9 @@ module.exports = {
         "-4s": "-4s",
         "-10s": "-10s",
         "-20s": "-20s",
+        "-25s": "-25s",
         "-30s": "-30s",
+        "-40s": "-40s"
       },
       boxShadow: {
         teal: "0px 0px 14px 8px rgba(184, 185, 237, 0.5)",
@@ -68,6 +70,8 @@ module.exports = {
       teal: "#B8B9ED",
       white: "#E7DFDD",
       lightRed: "#EF5350",
+      coral: "#FF7F50",
+      emerald: "#00CB72"
     },
   },
   variants: [],
@@ -105,9 +109,15 @@ module.exports = {
         ".delay--20s": {
           "animation-delay": "-20s",
         },
+        ".delay--25s": {
+          "animation-delay": "-25s",
+        },
         ".delay--30s": {
           "animation-delay": "-30s",
         },
+        ".delay--40s": {
+          "animation-delay": "-40s"
+        }
       };
       addUtilities(utilities, ["responsive"]);
     }),
