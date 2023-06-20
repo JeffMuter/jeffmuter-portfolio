@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'century_gothicregular';
-  src: url('./fonts/century_gothic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   width: 100%;
     height: 100%;
