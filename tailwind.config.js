@@ -9,15 +9,20 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        marquee: "marquee 35s linear infinite",
-        marquee2: "marquee2 45s linear infinite",
+        marquee0: "marquee0 35s linear infinite",
+        marquee1: "marquee1 35s linear infinite",
+        marquee2: "marquee2 65s linear infinite",
         marquee3: "marquee3 50s linear infinite",
         marquee4: "marquee4 55s linear infinite",
         marquee5: "marquee5 60s linear infinite",
-        marquee6: "marquee6 75s linear infinite",
+        marquee6: "marquee6 45s linear infinite",
       },
       keyframes: {
-        marquee: {
+        marquee0: {
+          "0%": { transform: "translateX(600%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee1: {
           "0%": { transform: "translateX(500%)" },
           "100%": { transform: "translateX(-100%)" },
         },
@@ -42,19 +47,21 @@ module.exports = {
           "100%": { transform: "translateX(-100%)" },
         },
       },
-      textShadow: {
-        sm: "0 1px 2px var(--tw-shadow-color)",
-        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
-        lg: "0 8px 16px var(--tw-shadow-color)",
-        teal: "0 0 14px rgba(184, 185, 237, 0.3), 0 0 15px rgba(184, 185, 237, 0.9), 0 0 12px rgba(184, 185, 237, 0.9), 0 0 8px rgba(184, 185, 237, 0.3), 0 0 18px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.9), 0 0 17px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.3)",
-      },
       animationDelay: {
+        "20s": "20s",
         "-4s": "-4s",
         "-10s": "-10s",
         "-20s": "-20s",
         "-25s": "-25s",
         "-30s": "-30s",
-        "-40s": "-40s"
+        "-40s": "-40s",
+        "-50s": "-50s"
+      },
+      textShadow: {
+        sm: "0 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "0 2px 4px var(--tw-shadow-color)",
+        lg: "0 8px 16px var(--tw-shadow-color)",
+        teal: "0 0 14px rgba(184, 185, 237, 0.3), 0 0 15px rgba(184, 185, 237, 0.9), 0 0 12px rgba(184, 185, 237, 0.9), 0 0 8px rgba(184, 185, 237, 0.3), 0 0 18px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.9), 0 0 17px rgba(184, 185, 237, 0.3), 0 0 17px rgba(184, 185, 237, 0.3)",
       },
       boxShadow: {
         teal: "0px 0px 14px 8px rgba(184, 185, 237, 0.5)",
@@ -100,6 +107,9 @@ module.exports = {
     }),
     plugin(function ({ addUtilities }) {
       const utilities = {
+        ".delay-20s": {
+          "animation-delay": "20s",
+        },
         ".delay--4s": {
           "animation-delay": "-4s",
         },

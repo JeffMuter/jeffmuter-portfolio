@@ -25,11 +25,11 @@ const About = (props) => {
                 isLoaded ? "translate-x-0" : "-translate-x-full"
               } title-font lg:text-5xl md:text-5xl text-3xl mb-4 mt-7 font-medium text-teal`}
             >
-              My name is Jeff Muter, 
-              <br /> Software Developer, 
-              <br /> New Father, 
-              <br /> Planeswalker, 
-              <br /> Innovation Lover, 
+              My name is Jeff Muter
+              <br /> Software Developer
+              <br /> New Father
+              <br /> Planeswalker
+              <br /> Innovation Lover
               <br /> Lifelong Learner
             </p>
           </div>
