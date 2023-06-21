@@ -18,11 +18,12 @@ const Skills = () => {
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skills.map((skill) => (
+            // NEED TO ADD ANIMATION FOR DIV DROPDOWN FOR SKILL DESCRIPTION
             <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-pink rounded flex relative transition-shadow duration-300 hover:box-shadow-teal">
+              <div className="bg-pink rounded flex relative transition-shadow duration-300 hover:box-shadow-teal focus:h-32">
                 <BadgeCheckIcon className="text-teal fill-teal w-6 h-6 flex-shrink-0 m-4 mr-4" />
                 <span className="title-font font-medium text-teal mt-4">
-                  {skill}
+                  {skill.title}
                 </span>
                 <div className="ml-auto w-12 h-full">
                   <div

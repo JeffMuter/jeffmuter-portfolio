@@ -12,19 +12,23 @@ commands:
 
 App:
 
-1. Change font
+1. Do we like this font?
 
 About:
 
-1. Something to go on right side of screen for About - too much empty space
+1. Animated popup asking if someone's looking for a software dev. take them down to the email-contact form
 
 Skills:
 
 1. hovering over the whole skill activated the chevron arrow animation
-2. a sliding bar to reveal details about the skill selected
+2. Expand the div of the selected div and reveal details about my experience with that particular skill.
 
 Projects:
 
 1. Create slideshow instead of current.
 2. buttons to take you to github or website of the project
+
+Data:
+
+1. Update each skill with info about the skill.
    //////////////////////////////////////////////

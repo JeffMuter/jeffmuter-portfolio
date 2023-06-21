@@ -21,7 +21,7 @@ const About = (props) => {
               Hello,
             </p>
             <p
-              className={`inline-block transform transition-transform duration-2 ease-in-[cubic-bezier(0.95,0.05,0.795,0.035)] duration-1000 ${
+              className={`inline-block transform transition-transform duration-2 ease-in-[cubic-bezier(0.95,0.05,0.795,0.035] duration-1000 ${
                 isLoaded ? "translate-x-0" : "-translate-x-full"
               } title-font lg:text-5xl md:text-5xl text-3xl mb-4 mt-7 font-medium text-teal`}
             >
