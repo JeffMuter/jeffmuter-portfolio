@@ -7,6 +7,11 @@ import {
 import { skills } from "../data";
 
 const Skills = () => {
+  const expandSkillOnClick = () => {
+
+    
+
+  }
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
@@ -16,7 +21,7 @@ const Skills = () => {
             Technical Skills
           </h1>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" onClick={expandSkillOnClick}>
           {skills.map((skill) => (
             // NEED TO ADD ANIMATION FOR DIV DROPDOWN FOR SKILL DESCRIPTION
             <div key={skill} className="p-2 sm:w-1/2 w-full">
