@@ -49,7 +49,7 @@ const Email = (props) => {
           type="text"
           name="user_name"
           required
-          className="w-full rounded border border-teal focus:border-coral focus:border-2 text-coral py-1 px-3 leading-8"
+          className="w-full rounded border border-teal focus:border-coral text-coral py-1 px-3 leading-8"
           style={{ backgroundColor: "transparent" }}
           />
         {/* input field for user's email */}
@@ -58,7 +58,7 @@ const Email = (props) => {
           type="email"
           name="user_email"
           required
-          className="w-full rounded border border-teal focus:border-coral focus:border-2 text-coral py-1 px-3 leading-6"
+          className="w-full rounded border border-teal focus:border-coral text-coral py-1 px-3 leading-6"
           style={{ backgroundColor: "transparent" }}
         />
         {/* input field for message */}
@@ -66,7 +66,7 @@ const Email = (props) => {
         <textarea
           name="message"
           required
-          className="w-full rounded border border-teal focus:border-coral focus:border-2 h-32 text-base text-coral py-1 px-3 resize-none leading-6"
+          className="w-full rounded border border-teal focus:border-coral h-32 text-base text-coral py-1 px-3 resize-none leading-6"
           style={{ backgroundColor: "transparent" }}
         />
         {/* button to submit the form */}
