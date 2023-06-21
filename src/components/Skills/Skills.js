@@ -8,8 +8,8 @@ import { skills } from "../data";
 
 const Skills = () => {
   const expandSkillOnClick = () => {
+// I want the skill divs to expand onClick and collapse onClick & off of the element
 
-    
 
   }
   return (
