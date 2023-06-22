@@ -16,22 +16,36 @@ const About = (props) => {
     <div className="relative">
       <section id="about" className="h-screen bg-cover bg-center">
         <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-          <div className="lg:pr-24 mr-auto flex flex-col items-start text-left font-gothicCentury mb-16 md:mb-0  w-1/2">
-            <p className="title-font text-4xl md:text-5xl lg:text-7xl font-medium text-coral">
+          <div className="lg:pr-24 mr-auto flex flex-col items-start text-left mb-16 md:mb-0  w-3/4">
+            <p className={`inline-block transform transition-transform duration-2 ease-in-[cubic-bezier(0.95,0.05,0.795,0.035] delay-700 duration-1000 ${
+                isLoaded ? "translate-y-0" : "-translate-y-40"
+              } title-font text-4xl md:text-5xl lg:text-7xl font-medium text-coral`}>
               Hello,
             </p>
-            <p
+            <div
               className={`inline-block transform transition-transform duration-2 ease-in-[cubic-bezier(0.95,0.05,0.795,0.035] duration-1000 ${
                 isLoaded ? "translate-x-0" : "-translate-x-full"
-              } title-font lg:text-5xl md:text-5xl text-3xl mb-4 mt-7 font-medium text-teal`}
+              } title-font lg:text-5xl md:text-5xl text-3xl mb-4 mt-7 font-medium text-teal [&>*]:mt-8`}
             >
-              My name is Jeff Muter
-              <br /> Software Developer
-              <br /> New Father
-              <br /> Planeswalker
-              <br /> Innovation Lover
-              <br /> Lifelong Learner
-            </p>
+              <p>
+                My name is Jeff Muter <br />
+              </p>
+              <p>
+                Software Developer <br />
+              </p>
+              <p>
+                 New Father <br />
+              </p>
+              <p>
+                Planeswalker <br />
+              </p>
+              <p>
+                Innovation Lover <br />
+              </p>
+              <p>
+                Lifelong Learner <br />
+              </p>
+            </div>
           </div>
         </div>
       </section>

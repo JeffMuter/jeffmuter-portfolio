@@ -1,17 +1,26 @@
-import React from "react";
+// import { useState, useReducer } from "react";
+import { skills } from "../data";
 import {
   BadgeCheckIcon,
   ChipIcon,
   ChevronDownIcon,
 } from "@heroicons/react/solid";
-import { skills } from "../data";
+
 
 const Skills = () => {
-  const expandSkillOnClick = () => {
-// I want the skill divs to expand onClick and collapse onClick & off of the element
 
 
-  }
+  // reducer function initial. Updates mapped div states.
+// const reducer = (state, action) => {
+//   let expanded = false;
+  
+//   return expanded;
+// }
+
+  // I want the skill divs to expand onClick and collapse onClick & off of the element
+  // const expandSkillOnClick = (skill) => {
+  //   setOpen(!open)
+  // }
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
@@ -21,14 +30,14 @@ const Skills = () => {
             Technical Skills
           </h1>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" onClick={expandSkillOnClick}>
-          {skills.map((skill) => (
-            // NEED TO ADD ANIMATION FOR DIV DROPDOWN FOR SKILL DESCRIPTION
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-pink rounded flex relative transition-shadow duration-300 hover:box-shadow-teal focus:h-32">
+{/* onClick={expandSkillOnClick} */}
+         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2" > 
+          {skills.map((skills) => (
+            <div key={skills} className="p-2 sm:w-1/2 w-ful" >
+              <div className="bg-pink rounded flex relative transition-shadow duration-300 hover:box-shadow-teal focus:h-32" >
                 <BadgeCheckIcon className="text-teal fill-teal w-6 h-6 flex-shrink-0 m-4 mr-4" />
                 <span className="title-font font-medium text-teal mt-4">
-                  {skill.title}
+                  {skills.title}
                 </span>
                 <div className="ml-auto w-12 h-full">
                   <div
@@ -41,6 +50,9 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
+              {/* <div>
+              { open && <div> <p className="bg-pink text-teal">{skill.description}</p></div> }
+              </div> */}
             </div>
           ))}
         </div>
