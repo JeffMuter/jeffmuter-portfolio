@@ -14,6 +14,11 @@ App:
 
 1. Do we like this font?
 
+Navbar:
+
+1. Round the left corners.
+2. Add resume & github & LinkedIn links / icons.
+
 About:
 
 1. Animated popup asking if someone's looking for a software dev. take them down to the email-contact form
