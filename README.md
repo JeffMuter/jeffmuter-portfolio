@@ -22,6 +22,7 @@ Skills:
 
 1. hovering over the whole skill activated the chevron arrow animation
 2. Expand the div of the selected div and reveal details about my experience with that particular skill.
+3. Replace Check icons with logos where possible
 
 Projects:
 
