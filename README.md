@@ -23,6 +23,8 @@ About:
 
 1. Animated popup asking if someone's looking for a software dev. take them down to the email-contact form
 
+2. Major Upgrade: Use ChatGPT plugin to pull database with personal details that help employers learn more about me/hobbies. Mantium API / Redis DB-> MongoDB is another alternative.
+
 Skills:
 
 1. hovering over the whole skill activated the chevron arrow animation
