@@ -11,6 +11,7 @@ const Skill = ({ skill }) => {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
   return (
     <div
       className={`p-2 m-2 bg-pink grid grid-cols-[60px,1fr,70px] rounded transform overflow-hidden transition-all duration-300 hover:box-shadow-teal ${
