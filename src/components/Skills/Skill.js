@@ -11,7 +11,7 @@ const Skill =({ skill })=>{
     const handleMouseLeave = () => {setIsHovering(false)};
     const expanded = isHovering 
     ? "transform transition-shadow duration-300 hover:box-shadow-teal hover:scale-y-2"
-     : " h-16"
+     : ""
     return (
         <div key={skill.id} className={`p-2 sm:w-1/2 w-full`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className={`bg-pink ${expanded} rounded flex relative`} >
