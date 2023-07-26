@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 // import className from "classnames";
 
 const About = (props) => {
+
+
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const subheaderOne = `//Software Developer`;
-  const subheaderTwo = `//Full Stack`;
+  const subheaderOne = `// Software Developer`;
+  const subheaderTwo = `// Full Stack`;
 
   useEffect(() => {
     setIsLoaded(true);

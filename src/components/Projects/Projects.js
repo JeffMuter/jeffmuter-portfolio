@@ -2,8 +2,14 @@ import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
 
+
+
+// TODO rework into slide show
+// TODO add button to project that takes the user to the project they're previewing
+// TODO add button tht takes user to the github of the project they're previewing
+
+
 const Projects = () => {
-  //displays 4 projects that link to their corresponding github when clicked. On hover, a description of the project appears.
   return (
     <section id="projects" className="text-teal body-font mt-10">
       <div className="flex flex-col w-full wb-20">

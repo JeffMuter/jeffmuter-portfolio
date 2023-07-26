@@ -34,6 +34,7 @@ export const projects = [
 ];
 
 export const skills = [
+  // TODO add icon of tech skill to skills
   {
     id: 0,
     title: "React",
