@@ -14,7 +14,7 @@ function App() {
         <main className="bg-purple font-comfortaa">
           <NavBar />
           <Background />
-          <About />
+          <About className="flex items-center" />
           <Skills />
           <Projects />
           <Contact />
