@@ -2,6 +2,30 @@ import { BadgeCheckIcon, ChevronDownIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 
 const Skill = ({ skill }) => {
+  const descriptionRaw = skill.description;
+
+  const getColoredString = (str) => {
+    const regex = /(\d+|\+)/g;
+    const numbersAndOperator = str.match(regex);
+
+    if (numbersAndOperator) {
+      return str.split(regex).map((item, index) => {
+        if (numbersAndOperator.includes(item)) {
+          return (
+            <span key={index} style={{ color: "#FF7F50" }}>
+              {item}
+            </span>
+          );
+        }
+        return item;
+      });
+    } else {
+      return str;
+    }
+  };
+
+  const descriptionEdited = getColoredString(descriptionRaw);
+
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -32,15 +56,22 @@ const Skill = ({ skill }) => {
           id="child"
           className="w-6 h-6 ease-in scale-100 hover:scale-125 duration-200 m-4"
         >
-          <div className="rounded-full transition ease-out duration-200 hover:border-teal hover:border-2">
+          <div
+            className={`rounded-full ${
+              isHovered
+                ? "transition fade-in duration-300 border-teal border-2"
+                : ""
+            }`}
+          >
             <ChevronDownIcon className="text-teal fill-teal w-4.5" />
           </div>
         </div>
       </div>
-      <p className="col-start-1 col-end-4 text-white text-sm ml-4">
-        {skill.description}
+      <p className="col-start-1 col-end-4 text-teal text-sm ml-4">
+        {descriptionEdited}
       </p>
     </div>
   );
 };
+
 export default Skill;
