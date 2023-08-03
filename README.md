@@ -1,7 +1,9 @@
 //////////////////////////////////////////////
-This is my personal webdev portfolio. Built using ReactJS, html, css, & TailwindCSS.
+This is my personal webdev portfolio. Built using React, HTML, & TailwindCSS.
 jeffmuter.com
+
 //////////////////////////////////////////////
+
 HOW TO DEPLOY UPDATES TO FIREBASE
 commands:
 
