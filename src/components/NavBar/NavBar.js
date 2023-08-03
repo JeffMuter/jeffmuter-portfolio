@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./NavBar.css";
 
-// A simple navigation bar component.
+// TODO add github icon that links to my github profile
+// TODO add linkedin icon that links to my linkedin
+
 const NavBar = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 

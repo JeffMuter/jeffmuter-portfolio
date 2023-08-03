@@ -4,7 +4,7 @@ import Contact from "./components/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
-
+import ProjectSlideShow from "./components/Projects/ProjectSlideShow";
 import "tailwindcss/tailwind.css";
 
 function App() {
@@ -14,9 +14,10 @@ function App() {
         <main className="bg-purple font-comfortaa">
           <NavBar />
           <Background />
-          <About />
+          <About className="flex items-center" />
           <Skills />
           <Projects />
+          <ProjectSlideShow />
           <Contact />
         </main>
       </div>

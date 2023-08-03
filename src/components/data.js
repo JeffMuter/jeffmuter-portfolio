@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 0,
     title: "Budgeting App",
     subtitle: "React, JavaScript, HTML, CSS",
     description:
@@ -8,6 +9,7 @@ export const projects = [
     link: "https://github.com/JeffMuter/React_Budget_Manager",
   },
   {
+    id: 1,
     title: "Google Calendar Collab",
     subtitle: "React, JavaScript, HTML, CSS",
     description:
@@ -16,6 +18,7 @@ export const projects = [
     link: "https://github.com/cameroncrobinson/react-calendar",
   },
   {
+    id: 2,
     title: "Dice-Roll Game",
     subtitle: "JavaScript, HTML, CSS",
     description:
@@ -24,6 +27,7 @@ export const projects = [
     link: "https://github.com/JeffMuter/PigGame",
   },
   {
+    id: 3,
     title: "Calculator App",
     subtitle: "React, JavaScript, HTML, CSS",
     description:
@@ -34,15 +38,16 @@ export const projects = [
 ];
 
 export const skills = [
+  // TODO add icon of tech skill to skills
   {
     id: 0,
     title: "React",
-    description: "Used for 2 years in 10+ small projects",
+    description: "Used for 1+ year in 10+ small projects",
   },
   {
     id: 1,
     title: "Vue",
-    description: "Used for a large project",
+    description: "Used for Tech Elevator's capstone project",
   },
   {
     id: 3,
