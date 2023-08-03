@@ -21,12 +21,11 @@ const ProjectSlideShow = () => {
   return (
     <section id="slideshow" className="w-full h-[100vh]">
       <div className="m-10">
-        <div className="flex flex-col w-full wb-20">
-          <CodeIcon className="mx-auto inline-block w-10 wb-4 fill-teal" />
-          <h1 className="sm:text-4xl text-3xl mx-auto font-medium title-font text-teal mb-8">
-            Apps I Have Built
-          </h1>
-        </div>
+        <img
+          className="w-full h-[100vh]"
+          alt="slideshow of projects I have completed"
+          src={projects.image}
+        />
         <div>
           <h1 className="text-white">{slide.title}</h1>
           <button
