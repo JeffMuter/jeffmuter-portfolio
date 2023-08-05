@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { projects } from "../data";
-import { CodeIcon } from "@heroicons/react/solid";
 
 const ProjectSlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,11 +19,11 @@ const ProjectSlideShow = () => {
 
   return (
     <section id="slideshow" className="w-full h-[100vh]">
-      <div className="m-10">
+      <div className="m-10 relative">
         <img
-          className="w-full h-[100vh]"
+          className="w-[80vw] h-[80vh] block mx-auto"
           alt="slideshow of projects I have completed"
-          src={projects.image}
+          src={projects[currentIndex].image}
         />
         <div>
           <h1 className="text-white">{slide.title}</h1>
