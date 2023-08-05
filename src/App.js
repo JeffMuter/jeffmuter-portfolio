@@ -9,9 +9,7 @@ import "tailwindcss/tailwind.css";
 
 function App() {
   return (
-    <div>
-      <div>
-        <main className="bg-purple font-comfortaa">
+        <main className="bg-purple font-comfortaa h-max">
           <NavBar />
           <Background />
           <About className="flex items-center" />
@@ -20,8 +18,6 @@ function App() {
           <ProjectSlideShow />
           <Contact />
         </main>
-      </div>
-    </div>
   );
 }
 

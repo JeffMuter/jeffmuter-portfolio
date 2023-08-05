@@ -6,7 +6,7 @@ const Contact = (props) => {
   //Users can send me an email after giving some basic info via a form that takes up the right side of the bottom section of the page.On the bottom left is the Google Maps API zoomed into my area.
 
   return (
-    <section id="contact" className="relative min-h-screen">
+    <section id="contact" className="relative h-auto mt-20">
       {/* contianer for the GoogleMaps API & Email component */}
       <div className="container mx-auto flex justify-between sm:flex-nowrap flex-wrap min-h-screen">
         {/* container for GoogleMaps API */}
