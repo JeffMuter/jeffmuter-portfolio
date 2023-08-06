@@ -43,6 +43,8 @@ const ProjectSlideShow = () => {
           >
             Next Slide
           </button>
+          <button>See the Code</button>
+          <button>See the Website</button>
         </div>
       </div>
     </section>
