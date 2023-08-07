@@ -48,6 +48,7 @@ const Skill = ({ skill }) => {
       <span className="col-start-2 col-end-2 self-start title-font font-medium text-teal mt-4">
         {skill.title}
       </span>
+      <img alt="skill logo" src={skill.logo} />
       <div
         className="col-start-3 col-end-3 ml-auto w-12 h-full"
         id="skillCheckmark"

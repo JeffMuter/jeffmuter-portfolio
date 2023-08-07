@@ -71,7 +71,9 @@ export const skills = [
     description: "Used in 2+ major projects",
   },
   {
+    
     id: 7,
+    logo: "public/resources/html-logo.png",
     title: "HTML",
     description:
       "Used for 5+ years in 20+ small projects and 4+ large projects",
