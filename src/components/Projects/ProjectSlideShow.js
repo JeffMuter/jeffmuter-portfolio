@@ -27,15 +27,15 @@ const ProjectSlideShow = () => {
           Projects and References
         </h1>
       </div>
-      <div className="m-10 relative h-[100vh] bg-pink">
-        <h2 className="text-white">{slide.title}</h2>
+      <div className="m-10 relative h-[80vh] w-[80vw] bg-pink">
         <img
-          className="w-[100vw] h-[100vh] absolute top-0 left-0 bg-black opacity-100 transition-opacity duration-300 hover:opacity-70"
+          className="w-[80vw] h-[80vh] absolute top-0 left-0 bg-black opacity-100 transition-opacity duration-300 hover:opacity-30"
           alt="slideshow of projects I have completed"
           src={projects[currentIndex].image}
         />
         <div>
-          <h1 className="text-white">{slide.title}</h1>
+          <h3 className="text-teal">{slide.title}</h3>
+          <p className="text-teal">{slide.description}</p>
           <button
             type="button"
             className="bg-white relative z-50 cursor-pointer hover:bg-purple"
