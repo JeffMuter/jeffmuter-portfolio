@@ -1,7 +1,7 @@
-import { CodeIcon } from "@heroicons/react/solid";
-
+import { CodeIcon, ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 import { projects } from "../data";
+import "./Slideshow.css";
 
 const ProjectSlideShow = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,36 +19,31 @@ const ProjectSlideShow = () => {
   console.log("render");
   let slide = projects[currentIndex];
 
+  //TODO add grid layout to this component to line the content up nicely
   return (
-    <section id="slideshow" className="w-full h-auto mt-20">
-      <div className="flex flex-col w-full wb-20">
-        <CodeIcon className="mx-auto inline-block w-10 wb-4 fill-teal" />
-        <h1 className="sm:text-4xl text-3xl mx-auto font-medium title-font text-teal mb-8">
+    <section id="slideshow" className="flex flex-col items-center justify-center w-full h-auto mt-20">
+      <header className="text-center mb-8">
+        <CodeIcon className="w-10 h-10 fill-teal mx-auto" />
+        <h1 className="sm:text-4xl text-3xl font-medium title-font text-teal">
           Projects and References
         </h1>
-      </div>
-      <div className="m-10 relative h-[80vh] w-[80vw] bg-pink">
-        <img
-          className="w-[80vw] h-[80vh] absolute top-0 left-0 bg-black opacity-100 transition-opacity duration-300 hover:opacity-30"
-          alt="slideshow of projects I have completed"
-          src={projects[currentIndex].image}
-        />
-        <div>
-          <h3 className="text-teal">{slide.title}</h3>
-          <p className="text-teal">{slide.description}</p>
-          <button
-            type="button"
-            className="bg-white relative z-50 cursor-pointer hover:bg-purple"
-            onClick={handleNextSlide}
-          >
-            Next Slide
-          </button>
-          <button>See the Code</button>
-          <button>See the Website</button>
+      </header>
+      <section className="flex h-[80vh] w-[100vw] z-2">
+        <ChevronLeftIcon className="relative h-[10vw] w-[15vw] mx-[3vw] fill-teal self-center" onClick={handleNextSlide} />
+        <div class="grid-container">
+          <div class="filler1"></div>
+          <p class="slide-description" >{slide.description}</p>
+          <p class="slide-title">{slide.title}</p>
+          <div class="filler2"></div>
+          <button class="slide-code-button">Website</button>
+          <button class="slide-site-button">Code</button>
+          <div class="filler3"></div>
+          <p class="slide-tools"  dangerouslySetInnerHTML={{ __html: slide.subtitle }}></p>
         </div>
-      </div>
+        <ChevronRightIcon className="relative h-[10vw] w-[15vw] mx-[3vw] fill-teal self-center" onClick={handleNextSlide}/>
+      </section>
     </section>
   );
-};
+}
 
 export default ProjectSlideShow;

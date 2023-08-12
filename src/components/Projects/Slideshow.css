@@ -1,0 +1,58 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 15% 15% 35%;
+    grid-template-rows: 20% 60% 20%;
+    /* gap: 10px; */
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    "title title title title"
+    "desc filler3 filler3 tools"
+    "desc sitebtn codebtn tools"
+    ;
+}
+.slide-title {
+    grid-area: title;
+    color: #B8B9ED;
+    font-size: 2rem;
+    margin: 0 auto; /* Automatically centers the element horizontally */
+    margin-top: 2rem;
+
+}
+.slide-description {
+    grid-area: desc;
+    color: #B8B9ED;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+.slide-site-button {
+    grid-area: sitebtn;
+    background-color: #B8B9ED;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+    z-index: 2;
+}
+.slide-code-button {
+    grid-area: codebtn;
+    background-color: #B8B9ED;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+}
+.slide-tools {
+    grid-area: tools;
+    color: #B8B9ED;
+    margin-left: 50%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.filler1 {
+    grid-area: filler1;
+}
+.filler2 {
+    grid-area: filler2;
+}
+.filler3 {
+    grid-area: filler3;
+}

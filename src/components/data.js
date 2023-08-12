@@ -1,10 +1,9 @@
 export const projects = [
   {
     id: 0,
-    title: "Budgeting App",
-    subtitle: "React, JavaScript, HTML, CSS",
-    description:
-      "Using a graph system to visually show comparative spending per month. You can add expenses to specific dates with button.",
+    title: "Job Hunter Chatbot",
+    subtitle: "Java <br> Spring Boot <br> PostgreSQL <br> Vue.js <br> JavaScript <br> HTML <br> CSS",
+    description: "Full-stack web application that queries a database for answers on a variety of programming topics with specific answers dependent on the topic. Stores context if the user did not provide enough in the most recent query. Utilizing job hunting APIs to access lists of recent and nearby job postings, will send them to your email. Finds supportive articles and videos to help support your learning. Chatbot interprets verbal queries and responds through user audio if prompted.",
     image: "./BudgetPic.png",
     link: "https://github.com/JeffMuter/React_Budget_Manager",
   },
