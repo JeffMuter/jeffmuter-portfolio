@@ -1,0 +1,107 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 15% 15% 35%;
+    grid-template-rows: 20% 60% 20%;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    grid-template-areas: 
+    "desc title title filler1"
+    "desc filler3 filler3 tools"
+    "desc sitebtn codebtn tools"
+    ;
+    z-index: 2;
+}
+
+.slide-title {
+    grid-area: title;
+    color: #B8B9ED;
+    font-size: 2rem;
+    margin: 0 auto; /* Automatically centers the element horizontally */
+    margin-top: 2rem;
+    z-index: 2;
+}
+.slide-description {
+    grid-area: desc;
+    color: #B8B9ED;
+    margin: 3rem;
+    font-size: 1.25rem;
+    z-index: 2;
+}
+.slide-site-button {
+    grid-area: sitebtn;
+    background-color: #B8B9ED;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+    z-index: 2;
+    margin-top: 2rem;
+
+}
+.slide-code-button {
+    grid-area: codebtn;
+    background-color: #B8B9ED;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.5rem;
+    z-index: 2;
+    margin-top: 2rem;
+}
+.slide-tools {
+    grid-area: tools;
+    color: #B8B9ED;
+    margin-left: 50%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    z-index: 2;
+}
+.filler1 {
+    grid-area: filler1;
+}
+.filler2 {
+    grid-area: filler2;
+}
+.filler3 {
+    grid-area: filler3;
+}
+.appear-when-hover {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.grid-container:hover .appear-when-hover {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+/* Apply the dimming effect to the background image on hover */
+.grid-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s ease;
+}
+
+/* .grid-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed 
+    opacity: 0; /* Start with zero opacity 
+    pointer-events: none; /* Allow interactions with elements behind the pseudo-element 
+    transition: opacity 0.8s ease; /* Smooth transition for opacity change 
+} */
+ .grid-container:hover::before {
+    opacity: 1;  /* Increase opacity on hover to create the dimming effect */
+} 
