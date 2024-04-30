@@ -16,7 +16,7 @@ const About = (props) => {
   }, []);
 
   return (
-      <section id="about" className=" flex h-screen bg-cover bg-center items-center">
+      <section id="about" className="mx-auto flex h-screen bg-cover bg-center justify-center items-center">
         <div className="container flex py-20 flex-col items-center">
           <div className="lg:pr-24 flex flex-col items-center text-center mb-16 md:mb-0  w-3/4">
             <header
@@ -28,7 +28,7 @@ const About = (props) => {
             </header>
             <div
               className={`flex transform transition-transform ease-in-[cubic-bezier(0.95,0.05,0.795,0.035] delay-1000 duration-1000 ${
-                isLoaded ? "translate-x-0" : "-translate-x-[1000px]"
+                isLoaded ? "translate-x-0" : "-translate-x-[2000px]"
               } title-font lg:text-2xl md:text-2xl text-sm mb-4 mt-2 font-medium text-coral `}
             >
               <span className="md:mx-5 lg:mx-5 mx-2">
