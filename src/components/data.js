@@ -45,16 +45,22 @@ export const skills = [
     description: "Used Professionally for 1+ year in 10+ projects, both personal and enterprise",
   },
   {
-    id: 1,
-    logo: '/resources/react-logo.png',
-    title: "React",
-    description: "Used for 1+ year in 10+ small projects",
+    id: 0,
+    logo: '/resources/aws-logo.webp',
+    title: "Amazon Web Services",
+    description: "Using AWS to host my web apps, databases, and other server needs",
   },
   {
     id: 2,
     logo: '/resources/java-logo.png',
     title: "Java",
     description: "Used in 3+ major projects",
+  },
+  {
+    id: 1,
+    logo: '/resources/react-logo.png',
+    title: "React",
+    description: "Used for 1+ year in 10+ small projects",
   },
   {
     id: 3,
