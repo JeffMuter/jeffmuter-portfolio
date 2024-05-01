@@ -44,7 +44,7 @@ const Skill = ({ skill }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img className="col-start-1 col-end-1 w-8 h-8 ml-2 mt-2 flex-shrink-0" alt="skill logo" src={skill.logo} />
+      <img className="col-start-1 col-end-1 w-auto h-8 ml-2 mt-2 flex-shrink-0" alt="skill logo" src={skill.logo} />
       <span className="col-start-2 col-end-2 self-start title-font font-medium text-teal mt-4">
         {skill.title}
       </span>

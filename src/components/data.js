@@ -40,72 +40,64 @@ export const skills = [
   // TODO add icon of tech skill to skills
   {
     id: 0,
+    logo: '/resources/golang-logo.webp',
+    title: "Golang",
+    description: "Used Professionally for 1+ year in 10+ projects, both personal and enterprise",
+  },
+  {
+    id: 1,
     logo: '/resources/react-logo.png',
     title: "React",
     description: "Used for 1+ year in 10+ small projects",
   },
   {
-    id: 1,
-    logo: '/resources/vue-logo.png',
-    title: "Vue",
-    description: "Used for Tech Elevator's capstone project",
-  },
-  {
-    id: 3,
+    id: 2,
     logo: '/resources/java-logo.png',
     title: "Java",
     description: "Used in 3+ major projects",
   },
   {
-    id: 4,
+    id: 3,
     logo: '/resources/javascript-logo.png',
     title: "JavaScript",
     description:
       "Used for 5+ years in 20+ small projects and 4+ large projects",
   },
   {
-    id: 5,
+    id: 4,
     logo: '/resources/spring-logo.png',
     title: "Spring Boot",
     description: "Used in 2+ major projects",
   },
   {
-    id: 6,
+    id: 5,
     logo: '/resources/postgres-logo.png',
     title: "PostgreSQL",
     description: "Used in 2+ major projects",
   },
   {
-    id: 7,
+    id: 6,
     logo: "/resources/html-logo.png",
     title: "HTML",
     description:
       "Used for 5+ years in 20+ small projects and 4+ large projects",
   },
   {
-    id: 8,
+    id: 7,
     logo: '/resources/css-logo.png',
     title: "CSS",
     description:
       "Used for 5+ years in 20+ small projects and 4+ large projects",
   },
   {
-    id: 9,
+    id: 8,
     logo: '/resources/tailwind-logo.png',
     title: "TailwindCSS",
     description: "Used for 1+ year and in 3+ small projects",
   },
-  {
-    id: 10,
-    logo: '/resources/next-logo.png',
-    title: "Next.js",
-    description:
-      "Used for 1+ year and in 3+ small projects and 1 large project",
-  },
 ];
 
 export const testimonials = [
-  "Jeff helped us solve our website problems, that was nice.",
-  "Really appreciated Mr. Muter's support in fixing some glitches on our company website. He also made detailed notes to help other developers understand his work.",
+  "Jeff helped us solve our website problems, that was nice.",  "Really appreciated Mr. Muter's support in fixing some glitches on our company website. He also made detailed notes to help other developers understand his work.",
   "Our IT worker was struggling to add a new technology to our website for our customers. Jeff had no experience with the technology but he learned about the technology and implemented it for us. Now our new shop is up and running on our website. We really appreciated his help.",
 ];
