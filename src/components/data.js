@@ -1,38 +1,38 @@
 export const projects = [
   {
     id: 0,
-    title: "Job Hunter Chatbot",
-    subtitle: "Java Spring Boot PostgreSQL Vue.js JavaScript HTML CSS",
-    description: "Full-stack web application that queries a database for answers on a variety of programming topics with specific answers dependent on the topic. Stores context if the user did not provide enough in the most recent query. Utilizing job hunting APIs to access lists of recent and nearby job postings, will send them to your email. Finds supportive articles and videos to help support your learning. Chatbot interprets verbal queries and responds through user audio if prompted.",
-    image: "./BudgetPic.png",
-    link: "https://github.com/JeffMuter/React_Budget_Manager",
+    title: "Golang Terminal Geolocation AR Game",
+    subtitle: "Golang",
+    description: "A game built entirely in Golang, uses a terminal to play a Pokemon-Go merged with Factorio-like game. Using any terminal type, on any OS, or device that connects to uses GPS, or connected to WiFi. You place locations in the real world, manage a network of locations to gather resources from, using your collection of 'workers' to gather these resources. Over time, unravel the secrets of the world around you. Visit cities, forests, mountains, and other important real-world landmarks to progress.",
+    image: "./ar-game.jpeg",
+    link: "https://github.com/JeffMuter/Prism",
   },
   {
     id: 1,
-    title: "Google Calendar Collab",
-    subtitle: "React, JavaScript, HTML, CSS",
+    title: "Template Server",
+    subtitle: "Golang, HTML, CSS",
     description:
-      "By adding events to your calendar, you can add and remove events from a list. This app was made with Cameron Robinson.",
-    image: "./GoogleCalPic.png",
-    link: "https://github.com/cameroncrobinson/react-calendar",
+      "Built out an HTTP server, router, with advanced authentication techniques to deliver extremely fast web pages to the user from the server side, dynamic rendering using Golang's Templating capabilities, inserting data into the HTML",
+    image: "./template-server.jpeg",
+    link: "https://github.com/JeffMuter/template-server",
   },
   {
     id: 2,
-    title: "Dice-Roll Game",
-    subtitle: "JavaScript, HTML, CSS",
+    title: "Saorsa Blog",
+    subtitle: "Hugo, Golang JavaScript, HTML, CSS",
     description:
-      "A two-player browser game. Active player functionality, reactive styling based on active user, gamified scoring, winning resets, & reset game button.",
-    image: "./DiceGamePic.png",
-    link: "https://github.com/JeffMuter/PigGame",
+      "A developer blog that I personally run. I write the articles, make the posts. Normally focusing on my journey as a programmer, from what I have been doing with my local developer community, project highlights, and deep dives into programming topics.",
+    image: "./saorsadev.png",
+    link: "https://saorsadev.com",
   },
   {
     id: 3,
-    title: "Calculator App",
-    subtitle: "React, JavaScript, HTML, CSS",
+    title: "Old School Chat Bot",
+    subtitle: "Java, Spring Boot, JavaScript, Vue, HTML, CSS",
     description:
-      "A full scale calculator app. Most of the fun here came from the interesting .map() usage since I had never used it to quite this effect.",
-    image: "./CalcPic.png",
-    link: "https://github.com/JeffMuter/js-calculator",
+      "This project showcases a chatbot that uses both OpenAI, and old school techniques of retaining context of user conversations to reply to users, either answering the user with the most accurate response, if their question related to one of the answers in the database, or if the input from the user wasn't accurate enough, we could borrow a response from OpenAI.",
+    image: "./te-chatbot.jpeg",
+    link: "https://github.com/JeffMuter/te-chat-bot",
   },
 ];
 

@@ -15,7 +15,6 @@ const Home = () => {
       <About className="flex items-center" />
       <Skills />
       <Projects />
-      <ProjectSlideShow />
       <Contact />
     </main>
   );
