@@ -8,8 +8,8 @@ const About = (props) => {
 
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const subheaderOne = `// Software Developer`;
-  const subheaderTwo = `// Full Stack`;
+  const subheaderOne = `// Golang Developer`;
+  const subheaderTwo = `// Application & Web`;
 
   useEffect(() => {
     setIsLoaded(true);
